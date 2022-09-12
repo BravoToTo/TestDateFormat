@@ -16,3 +16,7 @@ Se crearon casos de prueba para comprobar el funcionamiento de la función 'Chan
 
 3. Pasando como parámetro una string vacía
 ![Screenshot](Screenshots/TestFailed_EmptyString.png)
+
+En base a estos resultados se optó por actualizar dicha función para prever todas estas situaciones.
+
+Ahora la función retorna "Error, ingrese el formato correcto." si se ingresa una fecha incorrecta.
