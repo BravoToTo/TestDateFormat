@@ -29,7 +29,14 @@ public class DateFormatter
             {
                 if (date.IndexOf("/") == 2 && date.LastIndexOf("/") == 5)
                 {
-                    return date.Substring(6) + "-" + date.Substring(3, 2) + "-" + date.Substring(0, 2);
+                    if (int.Parse(date.Substring(0,2)) <= 31 && int.Parse(date.Substring(3,2)) <= 12)
+                    {
+                        return date.Substring(6) + "-" + date.Substring(3, 2) + "-" + date.Substring(0, 2);
+                    }
+                    else
+                    {
+                        return "Error, ingrese el formato correcto.";
+                    }
                 }
                 else
                 {
